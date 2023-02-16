@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const HomeStack = createNativeStackNavigator();
@@ -9,6 +9,7 @@ function SearchView() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Search!</Text>
+      <Button title="afffffffff" onPress={() => navigation.navigate('Details')} />
     </View>
   );
 }
